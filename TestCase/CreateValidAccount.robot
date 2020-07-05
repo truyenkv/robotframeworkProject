@@ -4,10 +4,11 @@ Library  String
 Library  BuiltIn
 Resource  ../Resource/Common/CommonKeyword.robot
 Resource  ../Resource/PageObject/SignPage.robot
+Resource  ../Resource/PageObject/MyAccountPage.robot
 Resource  ../Resource/PageObject/CreateAccountPage.robot
 
 Test Setup      Open the site
-#Test Teardown   Close Browser
+Test Teardown   Close Browser
 
 *** Variables ***
 ${password}     12345
@@ -25,6 +26,7 @@ Create the account succesfully
     ${randomeText} =    Generate Text
     ${firstName}    Catenate    Truyen${randomeText}
     ${lastName}     Catenate    Kieu${randomeText}
+    ${fullName}     Catenate    ${firstName} ${lastName}
     Input valid email to email field    ${email}
     Input First Name    ${firstName}
     Input Last Name     ${lastName}
@@ -34,4 +36,9 @@ Create the account succesfully
     Input City          ${City}
     Select State        ${state}
     Input Phone Number  ${phoneNum}
+    Click Register Account Button
+    My Page Title Is    My account - My Store
+    Page Should Contain     Welcome to your account. Here you can manage all of your personal information and orders.
+    The Account Name Should Be  ${fullName}
+
 

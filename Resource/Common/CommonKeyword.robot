@@ -23,3 +23,5 @@ Generate Email
     ${email}    Catenate    truyen${randome}@gmail.com
     [Return]    ${email}
 
+
+
