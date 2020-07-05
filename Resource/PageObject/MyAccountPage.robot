@@ -3,8 +3,9 @@ Library  Selenium2Library
 Library  BuiltIn
 
 *** Variables ***
-${pageHeader}   class=page-heading
-${accountLink}  class=account
+${pageHeader}       class=page-heading
+${accountLink}      class=account
+${logoutButton}     class=logout
 
 *** Keywords ***
 My Page Title Is
@@ -19,4 +20,9 @@ The Account Name Should Be
     Wait Until Element Is Visible   ${accountLink}
     ${accoutName}   Get Text    ${accountLink}
     Should be equal     ${accoutName}   ${fullName}
+
+User log out
+    [Documentation]  click on logout button
+    Wait Until Element Is Visible   ${logoutButton}
+    Click Button        ${logoutButton}
 

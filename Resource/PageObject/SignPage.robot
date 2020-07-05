@@ -4,13 +4,13 @@ Library  BuiltIn
 Library  String
 
 *** Variables ***
-${emailField}       id=email_create
-${createButton}     id=SubmitCreate
-${errorlocator}     id=create_account_error
-${emailLoginField}       id=email
-${passwordField}    id=passwd
-${signinButton}     id=SubmitLogin
-${errorLogin}       xpath=//*[@class='alert alert-danger']
+${emailField}           id=email_create
+${createButton}         id=SubmitCreate
+${errorlocator}         id=create_account_error
+${emailLoginField}      id=email
+${passwordField}        id=passwd
+${signinButton}         id=SubmitLogin
+${errorLogin}           xpath=//*[@class='alert alert-danger']
 
 *** Keywords ***
 Create account with invalid email

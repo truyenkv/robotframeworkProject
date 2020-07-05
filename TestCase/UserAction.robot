@@ -22,3 +22,9 @@ Verify user login with correct account successful
     Login with account      kieuvantruyen.3dfish@gmail.com     12345
     My Page Title Is    My account - My Store
     The Account Name Should Be      Truyen Kieu
+
+Verify user logout succressful
+    [Documentation]  check My Page screen after user login succressful
+    Login with account      kieuvantruyen.3dfish@gmail.com     12345
+    User log out
+    Page Should Contain Element     ${signinButton}
