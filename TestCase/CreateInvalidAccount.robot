@@ -6,7 +6,7 @@ Resource  ../Resource/PageObject/SignPage.robot
 
 Test Setup      Open the site
 Test Teardown   Close Browser
-Test Template   Login with invalid account
+Test Template   Create account with invalid email
 
 
 *** Test Cases ***

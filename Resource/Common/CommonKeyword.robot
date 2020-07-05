@@ -12,3 +12,14 @@ Open the site
 Close Browsers
     Close Browser
 
+Generate Text
+    [Documentation]  create valid email
+    ${randome}   Generate Random String      3   [LOWER]
+    [Return]    ${randome}
+
+Generate Email
+    [Documentation]  create valid email
+    ${randome}   Generate Random String      5   [LOWER]
+    ${email}    Catenate    truyen${randome}@gmail.com
+    [Return]    ${email}
+
