@@ -7,8 +7,13 @@ ${urlSign}          http://automationpractice.com/index.php?controller=authentic
 ${urlHomePage}      http://automationpractice.com/index.php
 
 *** Keywords ***
+Open Home Screen
+    Open Browser    ${urlHomePage}      chrome
+    Maximize Browser Window
+
 Open The Sign In Screen
-    Open Browser    ${urlSign}      chrome
+    Open Browser    ${urlSign}          chrome
+    Maximize Browser Window
 
 Close Browsers
     Close Browser
