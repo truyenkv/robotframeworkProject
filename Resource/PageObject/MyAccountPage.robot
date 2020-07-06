@@ -5,7 +5,7 @@ Library  BuiltIn
 *** Variables ***
 ${pageHeader}       class=page-heading
 ${accountLink}      class=account
-${logoutButton}     class=logout
+${logoutButton}     xpath=//*[@class='logout']
 
 *** Keywords ***
 My Page Title Is
@@ -23,6 +23,7 @@ The Account Name Should Be
 
 User log out
     [Documentation]  click on logout button
+    [Tags]  logout
     Wait Until Element Is Visible   ${logoutButton}
-    Click Button        ${logoutButton}
+    Click Element    ${logoutButton}
 
