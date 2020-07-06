@@ -5,7 +5,7 @@ Library  BuiltIn
 *** Variables ***
 ${pageHeader}       class=page-heading
 ${accountLink}      class=account
-${logoutButton}     xpath=//*[@class='logout']
+${logoutButton}     class=logout
 
 *** Keywords ***
 My Page Title Is
