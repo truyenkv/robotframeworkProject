@@ -4,7 +4,7 @@ Resource  ../Resource/Common/CommonKeyword.robot
 Resource  ../Resource/PageObject/SignPage.robot
 
 
-Test Setup      Open the site
+Test Setup      Open The Sign In Screen
 Test Teardown   Close Browser
 Test Template   Create account with invalid email
 

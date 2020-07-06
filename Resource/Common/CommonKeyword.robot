@@ -3,11 +3,12 @@ Library  Selenium2Library
 
 
 *** Variables ***
-${url}      http://automationpractice.com/index.php?controller=authentication&back=my-account
+${urlSign}          http://automationpractice.com/index.php?controller=authentication&back=my-account
+${urlHomePage}      http://automationpractice.com/index.php
 
 *** Keywords ***
-Open the site
-    Open Browser    ${url}      chrome
+Open The Sign In Screen
+    Open Browser    ${urlSign}      chrome
 
 Close Browsers
     Close Browser
