@@ -7,7 +7,7 @@ Resource  ../Resource/PageObject/SignPage.robot
 Resource  ../Resource/PageObject/MyAccountPage.robot
 Resource  ../Resource/PageObject/CreateAccountPage.robot
 
-Test Setup      pen The Sign In Screen
+Test Setup      Open The Sign In Screen
 Test Teardown   Close Browser
 
 *** Variables ***

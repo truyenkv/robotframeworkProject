@@ -10,6 +10,7 @@ ${dressesMenu}      xpath=//*[@id='block_top_menu']/ul/li[2]/a
 ${dressSubMenu}     xpath=//*[@id='block_top_menu']/ul/li[1]/ul/li[2]/a
 ${topsSubMenu}      xpath=//*[@id='block_top_menu']/ul/li[1]/ul/li[1]/a
 ${subCateHeader}    class=subcategory-heading
+${T-Shirts}         xpath=//*[@id="block_top_menu"]/ul/li[3]/a
 
 *** Keywords ***
 Subcategory Must Have

@@ -37,6 +37,8 @@ Verify subcategory of Dresses
     Click Element       ${dressSubMenu}
     Subcategory Must Have       CASUAL DRESSES EVENING DRESSES SUMMER DRESSES
 
-
-
+Veirfy Menu T-Shirt doesn't submenu
+    [Documentation]     check subcategory of T-shirt. Keyword was defined at HomePage.robot
+    Click element   ${T-Shirts}
+    Page Should Not Contain Element     ${subCateHeader}
 
