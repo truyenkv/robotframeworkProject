@@ -11,11 +11,32 @@ Test Setup      Open Home Screen
 Test Teardown   Close Browser
 
 *** Variables ***
-${chck}     xpath=//ul[@class='clearfix']
+${chck}     xpath=//*[@class='subcategory-name']
+
+
 *** Test Cases ***
-Check in firstime
-    [Documentation]  just a text
+Verify subcategory of Women
+    [Documentation]     check subcategory of Women. Keyword was defined at HomePage.robot
     Click element   ${womenMenu}
-    ${category}     Get Text    ${chck}
-    Log to console  ${category}
+    Subcategory Must Have       TOPS DRESSES
+
+Verify subcategory of Dresses
+    [Documentation]     check subcategory of Dresses. Keyword was defined at HomePage.robot
+    Click element   ${dressesMenu}
+    Subcategory Must Have       CASUAL DRESSES EVENING DRESSES SUMMER DRESSES
+
+Verify subcategory of Top
+    [Documentation]     check subcategory of Tops in Women. Keyword was defined at HomePage.robot
+    Mouse Over          ${womenMenu}
+    Click Element       ${topsSubMenu}
+    Subcategory Must Have       T-SHIRTS BLOUSES
+
+Verify subcategory of Dresses
+    [Documentation]     check subcategory of Dresses in Women. Keyword was defined at HomePage.robot
+    Mouse Over          ${womenMenu}
+    Click Element       ${dressSubMenu}
+    Subcategory Must Have       CASUAL DRESSES EVENING DRESSES SUMMER DRESSES
+
+
+
 
