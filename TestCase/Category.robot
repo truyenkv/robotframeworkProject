@@ -26,7 +26,7 @@ Verify subcategory of Dresses
     Subcategory Must Have       CASUAL DRESSES EVENING DRESSES SUMMER DRESSES
 
 Verify subcategory of Top
-    [Documentation]     check subcategory of Tops in Women. Keyword was defined at HomePage.robot
+    [Documentation]     check1 subcategory of Tops in Women. Keyword was defined at HomePage.robot
     Mouse Over          ${womenMenu}
     Click Element       ${topsSubMenu}
     Subcategory Must Have       T-SHIRTS BLOUSES
